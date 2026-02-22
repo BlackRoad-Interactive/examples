@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BlackRoad Agent Orbit</title>
+  <style>body { margin: 0; background: #000; color: #fff; font-family: monospace; }</style>
+</head>
+<body>
+  <h2>🌌 BlackRoad Agent Orbit</h2>
+  <p>Load Three.js and <a href="https://github.com/BlackRoad-OS/blackroad-os-metaverse">blackroad-os-metaverse</a> for full 3D.</p>
+  <script>
+    const agents = ['LUCIDIA','ALICE','OCTAVIA','PRISM','ECHO','CIPHER'];
+    const colors = ['#00BCD4','#4CAF50','#9C27B0','#FFC107','#9E9E9E','#F44336'];
+    agents.forEach((a,i) => {
+      const d = document.createElement('div');
+      d.style.color = colors[i];
+      d.textContent = `● ${a}`;
+      document.body.appendChild(d);
+    });
+  </script>
+</body>
+</html>
